@@ -1,0 +1,2 @@
+module Comments::ApplicationHelper
+end

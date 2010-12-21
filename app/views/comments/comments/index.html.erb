@@ -1,0 +1,16 @@
+<h1> Comments </h1>
+
+<table>
+  <tr>
+    <th>Author</th>
+    <th>Content</th>
+  </tr>
+  <% for comment in @comments %>
+    <tr>
+      <td><%= comment.author %></td>
+      <td><%= comment.content %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Comment", new_comment_path %></p>
